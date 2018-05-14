@@ -28,26 +28,39 @@
 
     </div>
     <div id="education">
-        <h2>Educations</h2>
-        <div class = "edu">
-            <p><strong>British Columbia Institute of Technology</strong></p>
-            <p>Computer Systems Technology (Diploma).</p>
-            <p>July 2017 - Present</p>
-        </div>
-        <div class = "edu">
-            <p><strong>British Columbia Institute of Technology</strong></p>
-            <p>Applied Web Development (Certificate).</p>
-            <p>January 2016 - July 2017</p>
-        </div>
-        <div class = "edu">
-            <p><strong>University Of Mindanao</strong></p>
-            <p>Bachelor of Science in Information Technology (Undergraduate).</p>
-            <p>June 2009 - February 2012</p>
-        </div>
-        <div class = "edu">
-            <p><strong>Emilio Ramos National High School</strong></p>
-            <p>2004 - 2008</p>
-        </div>
+        <section id="explore-section" class="bg-light text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/bg.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Explore & Connect</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus dolorem eum illum laborum officiis quasi
+                            qui, quod rem repellendus vel velit voluptatem voluptates! Voluptatum?
+                        </p>
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores autem
+                                deserunt, dignissimos distinctio eveniet explicabo fuga
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores autem
+                                deserunt, dignissimos distinctio eveniet explicabo fuga
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <div id="quotes">
         <p>"It always seems impossible until its done."</p>
