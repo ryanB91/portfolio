@@ -4,20 +4,61 @@ html{
 body {
     position: relative;
     overflow-x: hidden;
-
 }
 
 footer{
     background: #1b1e21;
 }
 
-.navbar{
-    box-shadow: 0px 5px 9px #3292a6;
-    /*opacity: 0.8; */
-
+a:link {
+    color: #000;
 }
-.navbar .nav-item {
-    font-size: 1.2rem;
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: black;
+}
+
+div.circleBehind a{
+    position: relative;
+    z-index: 0;
+}
+
+div.circleBehind a:before, div.circleBehind a:after {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #3292a6;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+div.circleBehind a:hover {
+    text-shadow: 1px 1px #3292a6;
+}
+
+div.circleBehind a:hover:before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(2);
+}
+
+div.circleBehind a:hover:after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
 
 #home .carousel-item{
@@ -28,32 +69,10 @@ footer{
     text-shadow: 1px 1px #3292a6;
 }
 
-#photography{
-
-}
 
 #project{
     height: 500px;
     background: #17a2b8;
-}
-
-.carousel-image-1{
-    background: url("../img/imgL/iceberg.jpg");
-    background-size: cover;
-}
-
-.carousel-image-2{
-    background: url("../img/imgL/camping.jpg");
-    background-size: cover;
-}
-
-.carousel-image-3{
-    background: url("../img/imgL/mountain.jpg");
-    background-size: cover;
-}
-
-.glow{
-    border-bottom: 1px #ccc solid;
 }
 
 #photos {
@@ -85,10 +104,54 @@ footer{
 
 }
 
-#project1{
-    width: 300px;
-    height: 155px;
-    background: url("../img/thumbnails/hgc.jpg");
+#contact{
+    position: relative;
+}
+
+#page-header{
+    height: 300px;
+    background: url("../img/imgL/miracle.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#pageError{
+    height: 100vh;
+}
+
+.navbar{
+    box-shadow: 0px 5px 9px #3292a6;
+    /*opacity: 0.8; */
+
+}
+
+.navbar .nav-item {
+    font-size: 1.2rem;
+}
+
+.carousel-image-1{
+    background: url("../img/imgL/iceberg.jpg");
+    background-size: cover;
+}
+
+.carousel-image-2{
+    background: url("../img/imgL/camping.jpg");
+    background-size: cover;
+}
+
+.carousel-image-3{
+    background: url("../img/imgL/mountain.jpg");
+    background-size: cover;
+}
+
+.glow{
+    border-bottom: 1px #ccc solid;
+}
+
+.navbar-brand:hover{
+    text-shadow: 1px 1px #3292a6;
+    transition: all 0.5s;
 }
 
 @media (max-width: 1200px) {
@@ -98,6 +161,7 @@ footer{
         column-count:         4;
     }
 }
+
 @media (max-width: 1000px) {
     #photos {
         -moz-column-count:    3;
@@ -105,6 +169,7 @@ footer{
         column-count:         3;
     }
 }
+
 @media (max-width: 800px) {
     #photos {
         -moz-column-count:    2;
@@ -112,6 +177,7 @@ footer{
         column-count:         2;
     }
 }
+
 @media (max-width: 400px) {
     #photos {
         -moz-column-count:    1;
@@ -120,48 +186,9 @@ footer{
     }
 }
 
-.navbar-brand:hover{
-    text-shadow: 1px 1px #3292a6;
-    transition: all 0.5s;
-}
 
-div.circleBehind a{
-    position: relative;
-    z-index: 0;
-}
-div.circleBehind a:before, div.circleBehind a:after
-{
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #3292a6;
-    transform: translateX(-50%) translateY(-50%) scale(0.8);
-    border-radius: 50%;
-    background: transparent;
-    content: "";
-    opacity: 0;
-    transition: all 0.5s;
-    z-index: -1;
-}
 
-div.circleBehind a:hover
-{
-    text-shadow: 1px 1px #3292a6;
-    font-size: 20px;
-}
-div.circleBehind a:hover:before
-{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(2);
-}
 
-div.circleBehind a:hover:after
-{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1.3);
-}
 
 
 

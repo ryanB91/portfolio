@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Home')
+
 @section('content')
     <section id="home">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -13,7 +15,6 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block mb-5">
                             <h1 class="display-4">Welcome to my page</h1>
-                            <a href="estimate.html" class="btn btn-success btn-lg">Download Resume</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +185,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <p>C++</p>
+                    <p>Angular</p>
                     <div class="progress my-3">
                         <div class="progress-bar progress-bar-striped" role="progressbar"
                              aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:20%">
@@ -389,88 +390,7 @@
         <div class="row">
             <div class="col text-center py-3">
                 <p>Check my instagram for more photos...</p>
-                <i class="fa fa-instagram" style="font-size: 35px"></i>
-            </div>
-        </div>
-    </section>
-
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-        </div>
-    </div>
-
-    <section id="project">
-        <div class="container py-3 text-white">
-            <div class="row">
-                <div class="col">
-                    <h1 class="display-4 text-center">Project</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-3 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="display-4 text-center text-white">Contact me</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 pb-3">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <h4>Get In Touch</h4>
-                            <i class="fa fa-instagram" style="font-size: 35px"></i>
-                            <i class="fa fa-facebook ml-2 mr-2" style="font-size: 35px"></i>
-                            <i class="fa fa-github" style="font-size: 35px"></i>
-                            <h4>Email</h4>
-                            <p>email@yahoo.ca</p>
-                            <h4>Phone</h4>
-                            <p>(555) 345-0345</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <h3 class="text-center">Please fill out this form to contact me</h3>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone Number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-outline-success btn-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://www.instagram.com/ryanbelandres/"><i class="fab fa-instagram" style="font-size: 35px"></i></a>
             </div>
         </div>
     </section>

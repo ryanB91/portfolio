@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ryan Belandres</title>
+    <title>Ryan Belandres | @yield('title')</title>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,19 +29,16 @@
         <div class="collapse navbar-collapse circleBehind" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="{{url('/')}}" class="nav-link {{setActive('/')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="{{url('/about')}}" class="nav-link {{setActive('about')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#photography" class="nav-link">Photography</a>
+                    <a href="{{url('/photography')}}" class="nav-link {{setActive('photography')}}">Photography</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#project" class="nav-link">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="{{url('/contact')}}" class="nav-link {{setActive('contact')}}">Contact</a>
                 </li>
             </ul>
         </div>
