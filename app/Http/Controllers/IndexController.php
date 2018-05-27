@@ -36,24 +36,10 @@ class IndexController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ContactFormRequest $request)
+    public function store()
     {
-        $data = [
-            'name' => $request->get('name'),
-            'email' => $request->get('email'),
-            'phoneNumber' => $request->get('phoneNumber'),
-            'msg' => $request->get('msg')
-        ];
 
-        Mail::send('store', $data, function($message){
-
-            $message->to('ryanbelandres123@gmail.com', 'ryan belandres')->subject('mark1');
-
-        });
-
-        $message = 'Thank you for contacting me!';
-
-        return view('index')->with('message', $message);
+        
     }
 
     /**
