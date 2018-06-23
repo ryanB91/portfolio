@@ -109,15 +109,49 @@ div.circleBehind a:hover:after {
 }
 
 #page-header{
-    height: 300px;
-    background: url("../img/imgL/miracle.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    color: #fff;
+    color: #000;
 }
 
 #pageError{
     height: 100vh;
+}
+
+#about{
+    position: relative;
+}
+
+#edu{
+    background: url("../img/desk.jpg");
+    height: 500px;
+    color: white;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+
+
+}
+
+.sampleD{
+    padding: 3px;
+    margin: 2px;
+    background-color: #B0BEC5;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.dark-overlay{
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar{
@@ -154,6 +188,48 @@ div.circleBehind a:hover:after {
     transition: all 0.5s;
 }
 
+
+.progress-bg{
+    background: #4d5665; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #4d5665, #68707c, #828998, #959ca7, #acb0b8) !important;
+}
+
+.progress{
+    box-shadow: 3px 5px 10px -3px #4d5665;
+    border-radius: 0px !important;
+    background: #f8f8f8 !important;
+}
+
+/** image filter css start here **/
+.column {
+    display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+
+.btn.active-btn {
+    background-color: #666;
+    color: white;
+}
+
+
 @media (max-width: 1200px) {
     #photos {
         -moz-column-count:    4;
@@ -185,10 +261,6 @@ div.circleBehind a:hover:after {
         column-count:         1;
     }
 }
-
-
-
-
 
 
 

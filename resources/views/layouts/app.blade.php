@@ -22,7 +22,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
     <div class="container">
-        <a href="index.html" class="navbar-brand">
+        <a href="{{url('/')}}" class="navbar-brand">
             <img src="img/mylogo.png" width="60" height="60" alt=""><h3 class="d-inline align-middle">Ryan Belandres</h3>
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
@@ -49,7 +49,7 @@
 @yield('content')
 
 
-<footer>
+<footer class="footer">
     <div class="row">
         <div class="col text-white text-center pt-3">
             <p>Copyright &copy; 2018 Ryan Belandres | All rights reserved</p>
